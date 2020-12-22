@@ -8,15 +8,21 @@ public class IncredibleCalculator {
 
         System.out.println("Selecciona la operación que prefieras realizar: ");
 
+
         System.out.println("1. Sumar");
 
 
         System.out.println("2. Restar");
+
+
+        System.out.println("3. Multiplicar");
+
        
         int opcion = leerEnteroEntrada();
 
 
         switch (opcion) {
+
 
             case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
                     break;
@@ -25,11 +31,14 @@ public class IncredibleCalculator {
 
 
             case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
-                    break;
-
+            		break;
+            case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
+            	    break;
         }
 
-    }
+
+
+    
 
 
 
@@ -37,6 +46,16 @@ public class IncredibleCalculator {
     public static int resta(int a, int b) {
         return a - b;
     }
+
+
+  
+
+   
+    public static int multiplicacion(int a, int b) {
+        return a * b;
+    }
+
+   
 
 
     public static int leerEnteroEntrada() {
