@@ -10,6 +10,7 @@ public class IncredibleCalculator {
 
 
 
+
         System.out.println("1. Sumar");
 
 
@@ -20,6 +21,9 @@ public class IncredibleCalculator {
 
         System.out.println("4. Dividir (división entera)");
 
+        System.out.println("5. Dividir (división con decimales)");
+
+
 
 
        
@@ -27,6 +31,7 @@ public class IncredibleCalculator {
 
 
         switch (opcion) {
+
 
 
 
@@ -52,15 +57,26 @@ public class IncredibleCalculator {
             
             case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
                     break;
-        }
+        
+
+
+            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
+                    break;
 
 
         }
+    }
 
 
     
 
+    public static int suma(int a, int b) {
+        return a + b;
+    }
 
+    public static int resta(int a, int b) {
+        return a - b;
+    }
 
   
 
@@ -68,7 +84,13 @@ public class IncredibleCalculator {
     public static int multiplicacion(int a, int b) {
         return a * b;
     }
+    public static int divisionEntera(int a, int b) {
+        return a / b;
+    }
 
+    public static double divisionConDecimales(int a, int b) {
+        return a / (b * 1.0);
+    }
     
 
 
@@ -76,6 +98,7 @@ public class IncredibleCalculator {
 
 
    
+
 
 
     public static int leerEnteroEntrada() {
